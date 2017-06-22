@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <title>Test Website</title>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    </head>
+    
+    <body>
+        <div id="container">
+            <header id="header">
+                <h1>Test Website</h1>
+            </header>
+            
+            <nav id="navigation">
+                <h3 id="nav-title">Menu</h3>
+                <ul id="navbar">
+                    <li class="navlink"><a class="navhyper" href="index.html">Home</a></li>
+                    <li class="navlink"><a class="navhyper" href="gallery.html">Gallery</a></li>
+                    <li class="navlink"><a class="navhyper" href="slideshow.html">Slideshow</a></li>
+                    <li class="navlink">
+                        <select id="select-style" onChange="theme(this);">
+                        <option id="Spearmint" class="style-link">Spearmint</option>
+                        <option id="Epic" class="style-link">Epic</option>
+                        <option id="Ocean" class="style-link">Ocean</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div id="content">
+                <h3 id="slideshow-header">Slideshow</h3>
+                <p id="image-count"></p>
+                <figure id="slideshow">
+                    <img id="slideshow-img" alt="image1" src="images/1.jpg">
+                    <img alt="image2" class="slideshow-hidden" src="images/2.jpg">
+                    <img alt="image3" class="slideshow-hidden" src="images/3.jpg">
+                    <img alt="image4" class="slideshow-hidden" src="images/4.jpg">
+                    <img alt="image5" class="slideshow-hidden" src="images/5.jpg">
+                    <img alt="image6" class="slideshow-hidden" src="images/6.jpg">
+                    <img alt="image7" class="slideshow-hidden" src="images/7.jpg">
+                    <img alt="image8" class="slideshow-hidden" src="images/8.jpg">
+                    <img alt="image9" class="slideshow-hidden" src="images/9.jpg">
+                </figure>
+            </div>
+            
+            <footer id="footer">
+                <p>Creator: Ragnar Einestam</p>
+            </footer>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>

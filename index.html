@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <title>Test Website</title>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    </head>
+    
+    <body>
+        <div id="container">
+            <header id="header">
+                <h1>Test Website</h1>
+            </header>
+            <nav id="navigation">
+                <h3 id="nav-title">Menu</h3>
+                <ul id="navbar">
+                    <li class="navlink"><a class="navhyper" href="index.html">Home</a></li>
+                    <li class="navlink"><a class="navhyper" href="gallery.html">Gallery</a></li>
+                    <li class="navlink"><a class="navhyper" href="slideshow.html">Slideshow</a></li>
+                    <li class="navlink">
+                        <select id="select-style" onChange="theme(this);">
+                        <option id="Spearmint" class="style-link">Spearmint</option>
+                        <option id="Epic" class="style-link">Epic</option>
+                        <option id="Ocean" class="style-link">Ocean</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+            <div id="content">
+                <h2 id="content-header">Introduktion</h2>
+                <figure id="fig-bio" class="fig-home">
+                    <img src="https://gif-avatars.com/img/100x100/ghost.gif" alt="avatar" id="img-profile">
+                    <h3>Bio</h3>
+                    <p>Namn: Ragnar Einestam<br>
+                    Född: 19920228<br>
+                    Mail: ragnar.einestam@hotmail.com</p>
+                </figure>
+                 <figure id="fig-why" class="fig-home">
+                    <h3>Syfte</h3>
+                    <p>Jag gör den här hemsidan för att uppfylla följande punkter.
+                        </p>
+                        <ul>
+                            <li>Kunskap kring att skapa ett HTML-dokument med god semantisk stuktur för desktop-, tablet- och mobila-enheter</li>
+                            <li>
+                            Kunskap kring att anpassa en webbplats för olika enheter genom CSS</li>
+                            <li>Grundläggande JavaScript</li>
+                            <li>Kunna använda sig utav localStorage för att spara data lokalt hos besökaren.</li>
+                            <li>Kunna använda sig utav HTML5 cache för att spara data “offline” på användarens enhet.</li>
+                     </ul>
+                </figure>
+                <figure id="fig-dif" class="fig-home">
+                    <h3>Saker som har varit utmanande</h3>
+                    <ul>
+                        <li>1. Det har varit utmanande att få allting att kontinuerlig ligga snyggt placerat på sidan när den ändras dynamiskt.</li>
+                        <li>2. Javascript</li>
+                        <li>3. Kodstrukturen</li>
+                    </ul>
+                </figure>
+            </div>
+            <footer id="footer">
+                <p>Creator: Ragnar Einestam</p>
+            </footer>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>

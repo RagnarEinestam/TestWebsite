@@ -1,0 +1,281 @@
+@font-face{
+    font-family: droid;
+    src: url(fonts/kaus.ttf);
+}
+@font-face{
+    font-family: roboto;
+    src: url(fonts/roboto.ttf);
+}
+
+#container{
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    height: 100%;
+    font-family: roboto;
+    color: #808080;
+}
+
+#header{
+    width: 100%;
+    height: 10%;
+    padding-top: 1px;
+    font-size: 16px;
+    font-family: droid;
+    color: #006080;
+    background-color: #00ACE6;
+    text-align: center;
+}
+#navigation{
+    width: 100%;
+    height: 5%;
+    background-color: #0086B3;
+}
+#content{
+    width: 100%;
+    height: 100%;
+    background-color: #F9F9F9;
+    padding: 15px;
+    box-sizing: border-box;
+}
+#footer{
+    width: 100%;
+    height: 5%;
+    padding-top: 1px;
+    background-color: #EDEDED;
+    color: #808080;
+    clear: both;
+    text-align: center;
+}
+#select-style{
+    width: 90%;
+    border-style: none;
+    margin: 20px;
+    }
+#navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: none;
+}
+.navlink{
+    float: left;
+    width: 100%;
+}
+.navhyper{
+    display: block;
+    color: #F9F9F9;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#nav-title{
+    text-align: center;
+    color: #F9F9F9;
+    margin: 0px;
+    padding: 10px;
+}
+#content-header{
+    text-align: center;
+}
+#fig-bio{
+    float: left;
+    width: 95%;
+}
+#fig-why{
+    float: left;
+    width: 95%;
+}
+#fig-dif{
+    width: 95%;
+    clear: both;
+}
+.fig-gallery{
+    padding: 5px;
+    background-color: white;
+    width: 95%;
+    float: left;
+    margin: 5px;
+    border: 1px solid #E7E7E7;
+    box-shadow: 2px 2px 5px #E7E7E7;
+    box-sizing: border-box;
+}
+.fig-img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.fig-home{
+    padding: 15px;
+    background-color: white;
+    width: 40%;
+    border: 1px solid #E7E7E7;
+    box-shadow: 2px 2px 5px #E7E7E7;
+    box-sizing: border-box;
+    margin: 10px;
+}
+#gallery-style{
+    clear: both;
+}
+h3{
+    color: #666666;
+}
+#img-profile{
+    float: right;
+}
+#slideshow{
+    padding: 10px;
+    background-color: white;
+    width: 95%;
+    margin: 10px;
+    border: 1px solid #E7E7E7;
+    box-shadow: 2px 2px 5px #E7E7E7;
+    box-sizing: border-box;
+}
+
+#slideshow-img{
+    max-height: 100%;
+    max-width: 100%;
+}
+#slideshow:hover {
+    transform: rotate(180deg);
+}
+.slideshow-hidden{
+    display: none;
+}
+#slideshow-header{
+    text-align: center;
+}
+#slideshow-style{
+    clear: both;
+}
+#image-count{
+    margin-left: 25px;
+}
+@media screen and (min-width: 480px) and (max-width: 1024px){
+    #container{
+        width: 95%;
+    }
+    #header{
+        width: 20%;
+        height: 10%;
+        position: fixed;
+        float: left;
+        font-size: 6px;
+        overflow: hidden;
+    }
+    #navigation{
+        width: 20%;
+        height: 80%;
+        top: 10%;
+        position: fixed;
+        float: left;
+    }
+    #content{
+        width: 78.5%;
+        height: 100%;
+        float: right;
+    }
+    #footer{
+        width: 20%;
+        height: 10%;
+        top: 90%;
+        position: fixed;
+        float: left;
+        font-size: 12px;
+    }
+    #select-style{
+        width: 80%;
+        margin: 10px;
+        margin-left: 14px;
+        margin-right: 15px;
+        
+    }
+    #navbar{
+        display: block;
+    }
+    .navlink{
+        width: 100%
+    }
+    .navhyper{
+        text-align: left;
+        text-align: center;
+    }
+    #fig-bio{
+        float: left;
+        width: 95%;
+    }
+    #fig-why{
+        float: left;
+        width: 95%;
+    }
+    #fig-dif{
+        width: 95%;
+    }
+    .fig-gallery{
+        width: 46.5%;
+    }
+    .fig-home{
+        margin: 5px;
+    }
+} 
+
+@media screen and (min-width: 1024px){
+    #container{
+        width: 80%;
+        min-height: 100%;
+    }
+    #header{
+        font-size: 26px;
+        width: 100%;
+        height: 15%;
+    }
+    #navigation{
+        width: 100%;
+        height: 5%;
+    }
+    #content{
+        width: 100%;
+        height: 100%;
+    }
+    #footer{
+        width: 100%;
+        height: 5%;
+    }
+    #fig-bio{
+        float: left;
+        width: 50%;
+    }
+    #fig-why{
+        float: right;
+        width: 45%;
+    }
+    #fig-dif{
+        width: 99%; 
+    }
+    .fig-gallery{
+        width: 32%;
+    }
+    .fig-home{
+        margin: 5px;
+    }
+    #slideshow{
+        margin: 25px;
+    }
+    #nav-title{
+        display: none;
+    }
+    #navbar{
+        display: block;
+    }
+    .navlink{
+        float: left;
+        width: 25%;
+    }
+    #select-style{
+        margin: 16px;
+        margin-top: 17px;
+        margin-left: 15px;
+        width: 75%;
+    }
+}

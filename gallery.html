@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <title>Test Website</title>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    </head>
+    
+    <body>
+        <div id="container">
+            <header id="header">
+                <h1>Test Website</h1>
+            </header>
+            
+            <nav id="navigation">
+                <h3 id="nav-title">Menu</h3>
+                <ul id="navbar">
+                    <li class="navlink"><a class="navhyper" href="index.html">Home</a></li>
+                    <li class="navlink"><a class="navhyper" href="gallery.html">Gallery</a></li>
+                    <li class="navlink"><a class="navhyper" href="slideshow.html">Slideshow</a></li>
+                    <li class="navlink">
+                        <select id="select-style" onChange="theme(this);">
+                        <option id="Spearmint" class="style-link">Spearmint</option>
+                        <option id="Epic" class="style-link">Epic</option>
+                        <option id="Ocean" class="style-link">Ocean</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div id="content">
+                <h3>Simon Stålenhag concept art</h3>
+                <p>The acclaimed artist, concept designer and author of Ur Varselklotet (2014) Simon Stålenhag (b. 1984) is best known for his highly imaginative images and stories portraying illusive sci-fi phenomena in mundane, hyper-realistic Scandinavian landscapes.<br><br>Ur Varselklotet was ranked by The Guardian as one of the ‘10 Best Dystopias’, in company with works such as Franz Kafka’s The Trial and Andrew Niccol’s Gattaca.</p>
+                <figure class="fig-gallery">
+                    <img src="images/1.jpg" alt="image1" class="fig-img">
+                </figure>
+                   <figure class="fig-gallery">
+                    <img src="images/2.jpg" alt="image2" class="fig-img">
+                </figure>
+                   <figure class="fig-gallery">
+                    <img src="images/3.jpg" alt="image3" class="fig-img">
+                </figure>
+                   <figure class="fig-gallery">
+                    <img src="images/4.jpg" alt="image4" class="fig-img">
+                </figure>
+                   <figure class="fig-gallery">
+                    <img src="images/5.jpg" alt="image5" class="fig-img">
+                </figure>
+                   <figure class="fig-gallery">
+                    <img src="images/6.jpg" alt="image6" class="fig-img">
+                </figure>
+                <figure class="fig-gallery">
+                    <img src="images/7.jpg" alt="image7" class="fig-img">
+                </figure>
+                <figure class="fig-gallery">
+                    <img src="images/8.jpg" alt="image8" class="fig-img">
+                </figure>
+                <figure class="fig-gallery">
+                    <img src="images/9.jpg" alt="image9" class="fig-img">
+                </figure>
+                <div id=gallery-style>
+                </div>
+            </div>
+            
+            <footer id="footer">
+                <p>©Ragnar Einestam</p>
+            </footer>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
